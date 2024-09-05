@@ -1,0 +1,38 @@
+.neto {
+    color: red;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #101010 !important;
+    font-size: 20px;
+    border-bottom: solid #585858 0.01em;
+}
+
+.navbar-brand {
+    color: rgb(40, 17, 17);
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.nav-link {
+    color: rgb(97, 97, 97);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: rgb(217, 217, 217);
+    font-size: 20px;
+}
+
+.gradiente {
+    background-image: linear-gradient(to right, #fb30d0, #944dc7, #64b0e3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&display=swap');
+
+.banner {
+    height: 90vh;
+}
+
+
+.welcome{
+    font-family: "Anton" ;
+    font-size: 100px;
+    background-image: linear-gradient(to right, #fb30d0, #944dc7, #7cedfe);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}	
+.imgBanner{
+    width: 550px;
+    height: 550px!important;
+ 
+}
+
+.blur-strip {
+    position: absolute;
+    width: 50%;
+    height: 400px;
+    background: linear-gradient(45deg, rgba(251, 48, 208, 0.3), rgba(148, 77, 199, 0.3) 25%, rgba(126, 237, 254, 0.3) 50%, rgba(251, 48, 208, 0.3) 75%, rgba(148, 77, 199, 0.3));
+    filter: blur(205px);
+    transform: rotate(45deg);
+    z-index: 0;
+    transition: top 0.3s ease, bottom 0.3s ease;
+}
+
+.strip-top {
+    top: 20%;
+    right: 15%;
+}
+
+.strip-bottom {
+    bottom: 20%;
+    left: 15%;
+}
+
+
+@media (max-width: 1350px) {
+    .imgBanner{
+        width: 400px;
+        height: 400px!important;
+    }
+}
+
+@media (max-width: 992px) {
+    .welcome{
+        margin-top: 5vh;
+        font-size: 12vh;
+        display: flex;
+        justify-content: center;
+        justify-self: center;
+    }
+    .imgBanner{
+        width: 300px;
+        height: 300px!important;
+    }
+    .spacex{
+        margin-bottom: 30vh;
+    }
+}
+
+@media (max-width: 735px) {
+    .welcome{
+        font-size: 8vh;
+    }
+    .imgBanner{
+        width: 230px;
+        height: 230px!important;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .welcome{
+        font-size: 38px;
+    }
+    .imgBanner{
+        width: 160px;
+        height: 160px!important;
+    }
+
+}
+
+#myVideo{
+    width: 100px;
+}
+
+.boton{
+    height: 5vh;
+    border: 0px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #fb30d0, #944dc7, #7cedfe);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.boton:hover{
+    background: linear-gradient(to right, #ec2dc2, #8345b0, #67c6d4);
+}

@@ -1,0 +1,36 @@
+.content_sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+   
+    overflow: hidden;
+}
+
+.part1, .part2 {
+    transform: translateX(0); 
+    opacity: 0;
+}
+
+.animate.part1 {
+    transform: translateX(-800px);
+    animation: 1.3s slideIn forwards;
+}
+
+.animate.part2 {
+    transform: translateX(800px);
+    animation: 1.3s slideIn forwards;
+}
+
+@keyframes slideIn {
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 992px) {
+    img {
+        width: 330px;
+    }
+}

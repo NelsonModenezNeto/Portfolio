@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.oi{
+    background-color: #101010;
+}
+
+/* Estilo para a barra de rolagem */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+/* Estilo para a parte da barra de rolagem que você arrasta */
+::-webkit-scrollbar-thumb {
+    background: #696969;
+    border: 3px solid #101010;
+    border-radius: 6px;
+}
+
+/* Estilo para a parte da barra de rolagem que fica atrás da parte que você arrasta */
+::-webkit-scrollbar-track {
+    background: #101010;
+ 
+    border-radius: 6px;
+}
