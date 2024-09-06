@@ -9,7 +9,7 @@ import { TypingAnimationComponent } from './components/typing-animation/typing-a
 import { GradeComponent } from './components/grade/grade.component';
 import { SobreMimComponent } from './components/sobre-mim/sobre-mim.component';
 import { CarroselComponent } from './components/carrosel/carrosel.component';
-import { ProjetosComponent } from './projetos/projetos.component';
+import { ProjetosComponent } from './components/projetos/projetos.component';
 
 @NgModule({
   declarations: [

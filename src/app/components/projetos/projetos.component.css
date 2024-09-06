@@ -48,12 +48,42 @@
 
 .card-projeto {
     position: relative;
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(24, 24, 24);
     width: 400px;
     height: 300px;
     border-radius: 20px;
-    margin-bottom: 40px;
-    overflow: hidden; /* Garante que a animação não ultrapasse os limites do card */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.4);
+}
+
+.back-img {
+    position: absolute;
+    background-color: rgb(31, 31, 31);
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+    bottom: -45px;
+    right: -45px;
+    padding-left: 15px;
+    padding-top: 15px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transform: translate(-20px, -20px);
+    box-shadow: -13px -13px 14px -18px rgba(0, 0, 0, 0.75);
+
+    img {
+        border-radius: 5px;
+        box-shadow: -14px -14px 14px -18px rgba(0, 0, 0, 0.75);
+    }
+}
+
+.card-projeto:hover .back-img {
+    transform: translate(-40px, -40px);
+    box-shadow: -13px -13px 14px -18px rgba(0, 0, 0, 0.75);
 }
 
 .loading-border {
@@ -67,7 +97,7 @@
     border-bottom-color: #944dc7;
     border-left-color: #944dc7;
     border-right-color: #944dc7;
-    border-radius: 0px; 
+    border-radius: 0px;
     box-sizing: border-box;
     transform: scale(1.0);
     animation: carregamento 10s linear infinite;
@@ -77,16 +107,40 @@
     0% {
         transform: translateX(-100%) translateY(-100%) scale(1.1);
     }
+
     25% {
         transform: translateX(200%) translateY(-100%) scale(1.1);
     }
+
     50% {
         transform: translateX(200%) translateY(200%) scale(1.1);
     }
+
     75% {
         transform: translateX(-100%) translateY(200%) scale(1.1);
     }
+
     100% {
         transform: translateX(-100%) translateY(-100%) scale(1.1);
     }
+}
+
+.title-project {
+    width: 100%;
+    font-size: 30px;
+    color: rgb(221, 221, 221);
+    font-weight: 700;
+    text-align: center;
+    border: 1px solid rgb(54, 54, 54);
+    border-bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.lembrete{
+    font-size: 11px;
+    color: rgb(221, 221, 221);
+    font-weight: 700;
+    margin-bottom: 40px;
 }
