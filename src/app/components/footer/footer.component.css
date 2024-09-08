@@ -1,0 +1,35 @@
+.content-footer {
+    border-top: 1px solid rgb(54, 54, 54);
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 120px;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.text {
+    color: rgb(202, 202, 202);
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 30px;
+    color: rgb(202, 202, 202);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 800px) {
+    .text {
+        color: rgb(202, 202, 202);
+        font-weight: 600;
+        font-size: 13px;
+    }
+}

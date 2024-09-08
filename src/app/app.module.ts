@@ -10,6 +10,8 @@ import { GradeComponent } from './components/grade/grade.component';
 import { SobreMimComponent } from './components/sobre-mim/sobre-mim.component';
 import { CarroselComponent } from './components/carrosel/carrosel.component';
 import { ProjetosComponent } from './components/projetos/projetos.component';
+import { ContatoComponent } from './components/contato/contato.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ProjetosComponent } from './components/projetos/projetos.component';
     GradeComponent,
     SobreMimComponent,
     CarroselComponent,
-    ProjetosComponent
+    ProjetosComponent,
+    ContatoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

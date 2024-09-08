@@ -3,12 +3,12 @@
     justify-content: center;
     align-items: center;
     height: 700px;
-   
     overflow: hidden;
 }
 
-.part1, .part2 {
-    transform: translateX(0); 
+.part1,
+.part2 {
+    transform: translateX(0);
     opacity: 0;
 }
 
@@ -33,4 +33,11 @@
     img {
         width: 330px;
     }
+}
+
+@media screen and (max-width: 800px) {
+    .content_sobre {
+        height: 100%;
+        flex-direction: column;
+    }	
 }

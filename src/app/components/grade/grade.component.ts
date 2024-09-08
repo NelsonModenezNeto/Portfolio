@@ -13,6 +13,10 @@ export class GradeComponent implements OnInit {
   programmedHours: number = 0;
   workedHours: number = 0;
 
+  private isAnimated: boolean = false; 
+
+  constructor() { }
+
   ngOnInit() {
     setTimeout(() => this.observeVisibility(), 0);
   }
@@ -22,11 +26,16 @@ export class GradeComponent implements OnInit {
 
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
-        if (entry.isIntersecting ) {
-          this.animateNumbers();
-          observer.disconnect();
+        if (entry.isIntersecting) { 
+          if (!this.isAnimated) {
+            this.animateNumbers();
+          }
+          this.isAnimated = true;
+          entry.target.classList.add('animated'); 
         }
       });
+    }, {
+      threshold: 0.1
     });
 
     this.cardElements.forEach(card => observer.observe(card.nativeElement));

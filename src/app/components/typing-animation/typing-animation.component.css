@@ -7,24 +7,10 @@
     height: 80px;
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 800px) {
     .type{
-        font-size: 8vh;
-        display: flex;
-        justify-content: center;
-        justify-self: center;
-    }
-}
-@media (max-width: 735px) {
-    .type{
-        font-size: 6vh;
-    }
-
-}
-
-@media (max-width: 500px) {
-    .type{
-        font-size: 4vh;
+        font-size: 45px;
+        margin-top: 15px;
     }
 
 }
