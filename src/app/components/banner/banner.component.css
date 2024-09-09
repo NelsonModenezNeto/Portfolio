@@ -58,16 +58,12 @@
     }
 
     .strip-top {
-        top: 15%;
-        right: 15%;
+        display: none;
     }
 
     .strip-bottom {
-        bottom: 45%;
-        left: 15%;
+        display: none;
     }
-
-
 }
 
 
