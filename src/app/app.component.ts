@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SpeedInsightsService } from './speed-insights.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
+  
+  constructor(private speedInsightsService: SpeedInsightsService) { }
+
+  ngOnInit(): void {
+    this.speedInsightsService.inject();
+  }
 }
